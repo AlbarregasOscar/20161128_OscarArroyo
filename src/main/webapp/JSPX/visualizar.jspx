@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    Document   : visualizar
+    Created on : 23-nov-2016, 12:03:52
+    Author     : Oscar
+-->
+<jsp:root   xmlns:jsp="http://java.sun.com/JSP/Page"
+            xmlns:c="http://java.sun.com/jsp/jstl/core"
+            version="2.1">
+    <jsp:directive.page contentType="text/html; charset=UTF-8" />
+    <jsp:directive.page isELIgnored="false" />
+    <jsp:output omit-xml-declaration="false"
+                doctype-root-element="html"
+                doctype-public="-//W3C//DTD XHTML 1.1//EN"
+                doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml11.dtd" />
+
+    <html>
+        <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+            <title>Visualizar</title>
+        </head>
+        <body>
+            <c:set var="contexto" value="${pageContext.request.contextPath}" />
+            <h1> Visualizar Alumnos </h1>
+            <form method="post" action="${contexto}/Controlador">
+                <label> Introduce el numero de alumnos que quieras visualizar </label>
+                <input type="text" name="numero" pattern="^([0-9])*$" title="Solo caracteres numericos"/><br/>
+                <input type="checkbox" name="todos"/>Todos <br/>
+                <input type="submit" name="enviar" value="Enviar"/>
+                <input type="submit" name="equipos" value="Visualizar Equipos"/>
+            </form>
+                <br/>
+            <p><a href="${contexto}/">Menú</a></p>
+        </body>
+    </html>
+
+</jsp:root>

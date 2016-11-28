@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    Document   : index
+    Created on : 23-nov-2016, 11:10:37
+    Author     : Oscar
+-->
+<jsp:root   xmlns:jsp="http://java.sun.com/JSP/Page"
+            version="2.1">
+    <jsp:directive.page contentType="text/html; charset=UTF-8" />
+    <jsp:directive.page isELIgnored="false" />
+    <jsp:output omit-xml-declaration="false"
+                doctype-root-element="html"
+                doctype-public="-//W3C//DTD XHTML 1.1//EN"
+                doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml11.dtd" />
+<html>
+    <head>
+        <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+        <title>Index</title>
+        <link href="" type="text/css" rel="stylesheet"/>
+    </head>
+    <body>
+        <h1>CRUD con DAO</h1>
+        <h2>Selecciona la opción que quieras</h2>
+        <h3><a href="ControladorOpciones?p=visualizar">Visualizar registros</a></h3>
+        <h3><a href="ControladorOpciones?p=actualizar">Modificar registros</a></h3>
+        <h3><a href="ControladorOpciones?p=eliminar">Borrar registros</a></h3>
+        <h3><a href="ControladorOpciones?p=insertar">Insertar registro</a></h3>
+    </body>
+</html>
+
+</jsp:root>

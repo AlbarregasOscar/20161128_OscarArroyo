@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    Document   : eliminar
+    Created on : 23-nov-2016, 12:26:20
+    Author     : Oscar
+-->
+<jsp:root   xmlns:jsp="http://java.sun.com/JSP/Page"
+            xmlns:c="http://java.sun.com/jsp/jstl/core"
+            version="2.1">
+    <jsp:directive.page contentType="text/html; charset=UTF-8" />
+    <jsp:directive.page isELIgnored="false" />
+    <jsp:output omit-xml-declaration="false"
+                doctype-root-element="html"
+                doctype-public="-//W3C//DTD XHTML 1.1//EN"
+                doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml11.dtd" />
+    <html>
+        <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+            <title>Borrar</title>
+        </head>
+        <body>
+            <c:set var="contexto" value="${pageContext.request.contextPath}" />
+            <h1> Menu de borrado</h1>
+            <h3><a href="${contexto}/ControladorOpciones2?p=eliminarAlumnos"> Eliminar alumnos</a></h3>
+            <h3><a href="${contexto}/ControladorOpciones2?p=eliminarEquipos"> Eliminar equipos</a></h3>
+            <br/>
+            <p><a href="${contexto}/">Menú</a></p>
+        </body>
+    </html>
+
+</jsp:root>
+
